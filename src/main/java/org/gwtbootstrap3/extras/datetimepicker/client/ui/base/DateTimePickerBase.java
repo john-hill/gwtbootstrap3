@@ -218,9 +218,6 @@ public class DateTimePickerBase extends Widget implements HasEnabled, HasId, Has
 
     @Override
     public void onShow(final Event e) {
-        // On show we put focus on the textbox
-        textBox.setFocus(true);
-
         fireEvent(new ShowEvent(e));
     }
 
@@ -231,9 +228,6 @@ public class DateTimePickerBase extends Widget implements HasEnabled, HasId, Has
 
     @Override
     public void onHide(final Event e) {
-        // On hide we remove focus from the textbox
-        textBox.setFocus(false);
-
         fireEvent(new HideEvent(e));
     }
 
